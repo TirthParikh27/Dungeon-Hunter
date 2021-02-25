@@ -10,57 +10,12 @@
 
 * Learn the application of design patterns.
 
-## Due Dates
-
-Milestone 1: 9AM Tuesday Week 7 (Demonstration: Week 7 Lab)
-
-Milestone 2: 9AM Tuesday Week 8 (Demonstration: Week 8 Lab)
-
-Final milestone: 9AM Monday Week 10 (Demonstration: Week 10 Lab)
-
-**NOTE:** There is **NO** provision for late submissions with a late penalty. Not submitting by the deadline is considered non-submission.
-
-## Value: 35 marks
-
 ---
 
 ## Overview
 
 You have received a request from a client for an application for the playing of dungeon-style puzzles. With a partner from your lab class, you will follow an agile development process to design and implement a desktop Java application that satisfies the requirements of the client (see below). The final piece of software you deliver is expected to be of professional quality, user-friendly, and demonstrate the knowledge and skills you have acquired in this course.
 
-## Partner
-
-You should by now have a partner and group set-up on webcms3, after following the week-03 lab instructions. Your repositories will be created from these webcms3 groups.
-
-If you do not have a webcms3 project group yet, you will be randomly assigned to a group.
-
-Only groups of 2 are allowed by default. Groups of 1 are never allowed without special consideration, since this violates course learning outcomes requiring teamwork.
-
-Once created, your group Gitlab repository will be available here (replace *GROUP_NAME* with your group's name):
-
-https://gitlab.cse.unsw.edu.au/COMP2511/20T2/GROUP_NAME
-
-## Project setup
-
-**NOTE**: For the first milestone, it is not necessary to set up the project in VSCode.
-
-Because this project uses JavaFX, to use it on a non-CSE computer, additional setup will be needed.
-
-The repository provided has already been setup to run the starter-game, and tested on a CSE machine (using VLAB). To play the starter game, clone the repository onto your CSE machine on VLAB, open the root directory of the repository in VSCode, and click the *"Run"* link above the *main* method of **DungeonApplication.java**
-
-Note that this works because *lib/symlink_javafx* is a symbolic link to a copy of JavaFX in the cs2511 class account. To make this work on a non-CSE computer, you will need to delete the *symlink_javafx* symbolic link, then download and unzip the latest version of the JavaFX JDK for Java 11 for your Operating System (taking into account if you have a 64 or 32 bit machine), and transfer the contents of the *lib* folder inside the JDK download into the *lib* folder on your cloned repository. You will also need to change the *launch.json* file to refer to **"./lib"** instead of **./lib/symlink_javafx** in the *"vmArgs"* configuration (note these modifications were tested on Windows 10).
-
-You may also need to copy the contents of the *bin* folder in the unzipped JavaFX JDK download into a *bin* folder under the root directory of your cloned repository (e.g. for Windows).
-
-The following version of the JavaFX JDK is recommended if you choose to run it on your computer, since it is the same version as on the CSE machine:
-
-https://gluonhq.com/products/javafx/
-
-Note that if you deviate from this precise directory structure, you may need to modify the VSCode configuration in *.vscode/launch.json* to be able to run the game in VSCode.
-
-If the steps in the above instructions worked, you should be able to run the starter code.
-
-**IMPORTANT**: Please do not push the contents of the *lib* or *bin* folders to your Gitlab repository. This is very likely to push you over the memory limits for the milestone 2 and 3 submissions.
 
 ## Preliminary client requirements
 
@@ -223,92 +178,6 @@ This final milestone will be a culmination of all the work done in the previous 
 
 In the week 10 lab, your tutor will ask you questions, and assign marks based on your answers to these questions (and also through offline marking when appropriate).
 
-## Assessment
-
-You will be assessed on your ability to apply what you have learnt in this course as well as your ability to produce a significant piece of software.
-
-In cases where the client has not been explicit in their requirements, you will need to make your own design decisions with your partner. However, this does not mean you can ignore whatever requirements the client has given you. You may be asked to justify any assumptions you have made during marking.
-
-You are expected to use git appropriately by committing regularly with meaningful commit messages and using feature branches to manage significant changes. Similarly, you should use the task board to coordinate work with your partner. You will need to take the principles you learnt from COMP1531 and apply them here.
-
-While it is up to you how to divide the work between you and your partner, both of you are expected to contribute code. Just creating diagrams and documentation is not sufficient contribution.
-
-## Hints
-
-* The first two milestones do not require a working UI. First determine how you are going to model a dungeon and its entities before considering the UI. A well designed back-end will require minimal change to connect to the UI.
-* Up until the JavaFX has been covered, you may find some of the starter code to be hard to understand. For the backend, you can either ignore the starter code completely, or just look at the `Dungeon`, `Entity`, `Player` and `Wall` classes.
-* The starter code uses the observer pattern to ensure the frontend and backend are in a consistent state and that they are not tightly coupled. It would be advisable to do the same for the changes you will make.
-* The majority of marks available (see below) are for having a well designed application that meets the requirements. Avoid adding extra complexity and extensions till you have something that meets the most basic requirements.
-* You will need to engage in research to learn parts of JavaFX yourself. This is expected, and an important learning process mirroring real-world development. You may also have to research how to configure VSCode to work with JavaFX to make some functionality work - this is similarly an important learning process. You should not expect to be taught all of the necessary JavaFX functionality.
-* For JUnit in VSCode - it can be useful to run CTRL-SHIFT-P and run "clean the Java language server workspace" if you are having issues with packages/tests recognition.
-* For JUnit tests - for this to work in VSCode, it is important to make the test classes public and named after the file they are inside.
-* Useful JUnit5 documentation/tutorial:
-https://junit.org/junit5/docs/current/api/
-https://junit.org/junit5/docs/current/user-guide/
-
-## Important Technical Notes
-
-### Submission sizes
-
-Maximum submission sizes apply (for milestones 2 and 3, since a submit command is used). For both milestones 2 and 3, a maximum repository size of 4MB applies. Exceeding this limit may result in you being unable to submit. Please email your tutor if you are unable to submit due to the maximum submission size being exceeded.
-
-A likely reason for you exceeding the memory limit is uploading Java class files, or JavaFX binaries in the *lib* or *bin* folders. You should not push these to your Gitlab repository - particularly since it is configured to your Operating System, which might not match your partner's configuration or the CSE machine. The **.gitignore** file has been configured to prevent pushing the contents of your *lib* or *bin* folders - please do not adjust this. Also remember that you should be making the submission work on the CSE machine, so there is no reason to push your JavaFX binaries.
-
-### Directory Structures
-
-Please adhere to the provided layout of the directories, and filenames and filepaths of the starter files. Modifying this may break tests we run on your submission and may result in loss of marks.
-
-You may add additional Java files with new Java classes in the *src/unsw/dungeon* folder.
-
-## Equal Constribution
-
-While it is up to you how to divide the work between you and your partner, both of you are expected to contribute code. Just creating diagrams and documentation is not sufficient contribution.
-
-You are expected to contribute equally to your partner every week. At the end of every week, you are required to log the distribution of work during that week (by listing work completed, and percentages of work completed by each person) at the bottom of your README.md. If both partners in a team fail to submit a log by 9am Monday, we will assume the contribution for the previous week was equal and not engage in redistribution of marks for that week. If one partner fails to submit a log by 9am Monday, we will automatically believe the partner who submitted a log and redistribute marks accordingly. No further consideration will be granted in this regard.
-
-If there is a disparity in the amount of work completed, you should email your tutor to discuss and resolve this.
-
-We will automatically assume that the author of work is the author of the git commit pushing it to your repository for assessing contribution levels - you should not allow you partner to push your work.
-
-We will only consider work pushed to the Gitlab repository in determining contribution levels.
-
-At the end of the trimester, marks will be re-distributed between project partners in instances of unequal contribution (as per the weekly logs, verified by Gitlab commits).
-
-Failure to make any contribution to your group-project during any 2-week period without special consideration will automatically result in a penalty being applied to your project mark, in addition to further redistribution of marks.
-
-## Submission
-
-We require your submission to execute without modification after your repository is cloned on a CSE machine (by opening the root repository directory in VSCode, and clicking the *"Run"* link in the **DungeonApplication.java** file. You should test this before submitting.
-
-Failure of your repository to work by these specifications may result in a loss of marks. Your tutor will not attempt to fix your code when marking your work (no matter how minor the necessary modificaton).
-
-Only one person in each group should submit. We will assess the latest submission as of the due-time by either partner.
-
-### Milestone 1
-
-You should have all your user stories entered into the issue board on your GitLab repository. You may continue to use the board between the deadline and your tutor's assessment, but they will be looking at the dates issues were modified to make sure you did the work that was required of you prior to the deadline.
-
-You **do not** have to run a submission command for this to be submitted - we will simply check the issue board, and only mark issues and modifications of issues occurring before the deadline.
-
-### Milestone 2
-
-Submit the contents of your GitLab repository with the following command:
-
-```bash
-$ 2511 submit milestone2
-```
-
-Your UML class diagram should be a PDF file at the root of your repository named `design.pdf`.
-
-### Milestone 3
-
-Submit the contents of your GitLab repository with the following command:
-
-```bash
-$ 2511 submit milestone3
-```
-
-You will demonstrate your application to your tutor in Week 10. You may be asked to justify your design decisions and explain how you worked with your partner.
 
 ## Marking criteria
 
@@ -381,7 +250,6 @@ Marks will be deducted for poor git and GitLab usage. For example, meaningless c
 |              | 2    | Two extensions representing some technical consideration                                          |
 |              | 3    | Three or more extensions that represent some technical as well as design and user interaction consideration |
 
-Marks will be deducted for poor git and GitLab usage. For example, meaningless commit messages, large commits, issue board out of date, etc.
 
 [player]:        images/human_new.png
 [wall]:          images/brick_brown_0.png
@@ -401,24 +269,3 @@ Marks will be deducted for poor git and GitLab usage. For example, meaningless c
 [boulders]:      examples/boulders.png
 [advanced]:      examples/advanced.png
 
-## Logs of work completed per partner
-
-### Week-05
-
-Fill in here.
-
-### Week-06
-
-Fill in here.
-
-### Week-07
-
-Fill in here.
-
-### Week-08
-
-Fill in here.
-
-### Week-09
-
-Fill in here.
