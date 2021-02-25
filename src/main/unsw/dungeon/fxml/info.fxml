@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="579.0" prefWidth="936.0" xmlns="http://javafx.com/javafx/11.0.4" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <HBox prefHeight="579.0" prefWidth="936.0" style="-fx-background-color: #6f6b70; -fx-border-color: #c31e1e;">
+         <children>
+            <VBox alignment="TOP_CENTER" prefHeight="387.0" prefWidth="126.0">
+               <children>
+                  <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <Button id="Back" mnemonicParsing="false" onAction="#handleBack" prefHeight="63.0" prefWidth="49.0" style="-fx-border-color: #c31e1e;" text="Back" textFill="#c31e1e">
+                           <font>
+                              <Font name="System Bold" size="11.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="5.0" />
+                           </HBox.margin></Button>
+                        <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                           <HBox.margin>
+                              <Insets left="10.0" right="2.0" />
+                           </HBox.margin>
+                           <image>
+                              <Image url="@../images/../images/human_new.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <ImageView fitHeight="35.0" fitWidth="38.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/hound.png" />
+                           </image></ImageView>
+                        <ImageView fitHeight="35.0" fitWidth="38.0" layoutX="10.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/gnome.png" />
+                           </image></ImageView>
+                        <ImageView fitHeight="35.0" fitWidth="38.0" layoutX="48.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/deep_elf_master_archer.png" />
+                           </image></ImageView>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" layoutX="10.0" layoutY="110.0" prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <ImageView fitHeight="39.0" fitWidth="38.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/greatsword_1_new.png" />
+                           </image></ImageView>
+                        <ImageView fitHeight="39.0" fitWidth="38.0" layoutX="10.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/bomb-removebg-preview.png" />
+                           </image></ImageView>
+                        <ImageView fitHeight="39.0" fitWidth="38.0" layoutX="48.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/depositphotos_5211837-stock-photo-circular-saw-blade-for-wood-removebg-preview.png" />
+                           </image></ImageView>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" layoutX="10.0" layoutY="210.0" prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <ImageView fitHeight="39.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/closed_door.png" />
+                           </image></ImageView>
+                        <ImageView fitHeight="39.0" fitWidth="39.0" layoutX="53.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/key.png" />
+                           </image></ImageView>
+                        <ImageView fitHeight="39.0" fitWidth="39.0" layoutX="73.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/portal.png" />
+                           </image></ImageView>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" layoutX="10.0" layoutY="310.0" prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <ImageView fitHeight="38.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/boulder.png" />
+                           </image></ImageView>
+                        <ImageView fitHeight="38.0" fitWidth="39.0" layoutX="10.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/pressure_plate.png" />
+                           </image></ImageView>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" layoutX="10.0" layoutY="338.0" prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/brilliant_blue_new.png" />
+                           </image></ImageView>
+                        <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="53.0" layoutY="19.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/bubbly.png" />
+                           </image></ImageView>
+                        <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="33.0" layoutY="19.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/Heart.png" />
+                           </image></ImageView>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" layoutX="10.0" layoutY="351.0" prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <ImageView fitHeight="39.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/gold_pile.png" />
+                           </image></ImageView>
+                        <ImageView fitHeight="39.0" fitWidth="39.0" layoutX="10.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/exit.png" />
+                           </image></ImageView>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            <VBox prefHeight="680.0" prefWidth="933.0">
+               <children>
+                  <TextArea style="-fx-background-color: #6f6b70; -fx-border-color: #c31e1e;" text="Player : &#10;You are the player. Use ARROW keys (UP, DOWN, RIGHT , LEFT) to move &#10;around the dungeon and interact with other entities and complete the dungeon." wrapText="true" />
+                  <TextArea editable="false" style="-fx-background-color: #6f6b70; -fx-border-color: #c31e1e;" text="Enemies :&#10;1) Hound : Runs toward you and takes a life if cathes you. No special ability.&#10;2) Wizard : Guards a area of the dungeon and invincible.Special Ability: Invisibility &#10;3) Archer : Runs towards you and takes a life by shooting a arrow. Special ability : Ranged attack" wrapText="true" />
+                  <TextArea prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: #c31e1e;" text="Weapons:&#10;1)Sword : Kills hound and archer when player has a sword. Max hits : 5. Press &quot;D&quot; to drop&#10;2)Bomb : Press &quot;B&quot; to drop and blasts after 3 seconds of drop destroying all entities nearby . Player will also die if nearby.&#10;3) Blade : Press &quot;K&quot; to throw the blade. Ranged Weapon. Can travel through portal." wrapText="true" />
+                  <TextArea prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: #c31e1e;" text="Door-Key , Portal :&#10;1) Door : Open with a key with a specific key with the same ID.&#10;2) Key : Player can have only 1 key at a time. Press &quot;D&quot; drop. Automatically used.&#10;3) Portal : Can teleport entities to other portal with the same ID." />
+                  <TextArea prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: #c31e1e;" text="Boulder - Switch:&#10;1) Boulder : Acts like a wall in most cases. Movable by player but just 1 at a time. Can be placed on Switch to trigger it.&#10;2) Switch : Trigger when a boulder placed on it. Used as a goal." wrapText="true" />
+                  <TextArea prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: #c31e1e;" text="Pick-up entities:&#10;1) Invincibility Potion : Player becomes invincible for 5 seconds. Enemy runs away from player for 5 seconds.&#10;2) Jump Potion : Player can jump through walls (1 at a time) for 5 seconds.&#10;3) Heart : Increases the number of lives a player has." wrapText="true" />
+                  <TextArea prefHeight="200.0" prefWidth="471.0" style="-fx-border-color: #c31e1e;" text="Goals : &#10;1) Treasure : Collected and stored in entities to complete a goal.&#10;2) ExitGate : Reach the gate to complete a goal. Often guarded by Wizard." />
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>
